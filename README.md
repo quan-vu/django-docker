@@ -7,7 +7,7 @@ Step 1: Clone this repository.
 
 Step 2: Create your Django project with Docker support.
 	$ cd <project_root_dir>
-	$ sudo docker-compose run web django-admin startproject <your_project_name> .
+	$ docker-compose run web django-admin startproject <your_project_name> .
 	$ sudo chown -R $USER:$USER .
 
 Step 3: Connect the database.
@@ -30,6 +30,4 @@ Step 4: Start project with docker.
 	$ docker-compose up
 
 Step 5: Finish.
-	Open your browser: http:0.0.0.0:8000
-
-
+	Open your browser: http:127.0.0.1:8000
