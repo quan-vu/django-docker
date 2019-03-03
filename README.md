@@ -3,18 +3,25 @@
 
 ## Guide
 Step 1: Clone this repository.
+
 	```shell
 	$ git clone
 	```
+	
 Step 2: Create your Django project with Docker support.
+
 	```shell
 	$ cd <project_root_dir>
 	$ docker-compose run web django-admin startproject <your_project_name> .
 	$ sudo chown -R $USER:$USER .
 	```
+	
 Step 3: Connect the database.
+
 	- Add config database for your Django project:
+	
 	// <your_project_name>/settings.py
+	
 	```javascript
 	DATABASES = {
 	    'default': {
@@ -28,10 +35,12 @@ Step 3: Connect the database.
 	```
 
 Step 4: Start project with docker.
+
 	```shell
 	$ cd <project_root_dir>
 	$ docker-compose up
 	```
 
 Step 5: Finish.
+
 	Open your browser: <a href="http:127.0.0.1:8000" target="_blank">http:127.0.0.1:8000</a>
